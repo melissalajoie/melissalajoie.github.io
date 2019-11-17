@@ -1,0 +1,107 @@
+//VARIABLES
+$heading-font: 'Lato', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+$yellow: #fac843;
+
+.container-fluid{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+header{
+	height: 100vh;
+	width: 100%;
+	background-image: url('../images/background.png');
+	background-size: cover;	
+
+/*	.logo{
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+		padding-top: 15px;
+	}*/
+}
+
+body {
+	font-family: $body-font;
+	color: #000;
+}
+
+button {
+	all: unset;
+}
+
+h1 {
+	margin: 0px;
+}
+
+.hidden {
+	display: none;
+}
+
+.hello {
+	font-size: 12vw;
+	text-align: right;
+	font-family: $heading-font;
+	font-weight: 100;
+	padding: 150px 40px 0px 0px;
+}
+
+.name {
+	color: $yellow;
+	font-weight: 600;
+}
+
+.fa-arrow-circle-down {
+	font-size: 4vw;
+	text-align: center;
+	display: block !important;
+	padding-top: 4vw;
+
+	&:hover {
+		color: $yellow;
+	}
+}
+
+.about {
+	height: 100vh;
+	width: 100%;
+	background-image: url('../images/background2.png');
+	background-size: cover;
+
+	.profile-img {
+		border-radius: 50%;
+		width: 50%;
+		margin: 50%;
+	}
+
+	h2 {
+		font-size: 9vw;
+		font-family: $heading-font;
+		font-weight: 100;
+		padding: 100px 0px 0px 40px;
+	}
+
+	p {
+		font-size: 1vw;
+		margin-left: 150px;
+	}
+}
+
+.experience {
+	font-size: 0.75vw;
+	margin-left: 150px;
+}
+
+.fa-linkedin, .fa-envelope {
+	color: #000;
+	&:hover {
+		color: $yellow;
+	}
+}
