@@ -4,7 +4,7 @@ $body-font: 'Roboto', sans-serif;
 
 $yellow: #fac843;
 
-.container-fluid{
+/*.container-fluid{
 	padding-right: 0;
 	padding-left: 0;
 }
@@ -12,13 +12,14 @@ $yellow: #fac843;
 .row{
 	margin-left: 0;
 	margin-right: 0;
-}
+}*/
 
 header{
 	height: 100vh;
 	width: 100%;
 	background-image: url('../images/background.png');
 	background-size: cover;	
+	text-align: center;
 
 /*	.logo{
 		display: block;
@@ -31,6 +32,7 @@ header{
 body {
 	font-family: $body-font;
 	color: #000;
+	margin: auto 0;
 }
 
 button {
@@ -60,12 +62,11 @@ h1 {
 
 .fa-arrow-circle-down {
 	font-size: 4vw;
-	text-align: center;
-	display: block !important;
 	padding-top: 4vw;
 
 	&:hover {
 		color: $yellow;
+		cursor: pointer;
 	}
 }
 
@@ -101,6 +102,7 @@ h1 {
 
 .fa-linkedin, .fa-envelope {
 	color: #000;
+
 	&:hover {
 		color: $yellow;
 	}
