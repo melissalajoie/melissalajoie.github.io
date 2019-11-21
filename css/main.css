@@ -1,24 +1,19 @@
-/*.container-fluid{
-	padding-right: 0;
-	padding-left: 0;
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.row{
-	margin-left: 0;
-	margin-right: 0;
-}*/
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 header {
   height: 100vh;
   width: 100%;
   background-image: url("../images/background.png");
   background-size: cover;
   text-align: center;
-  /*	.logo{
-  		display: block;
-  		width: 50%;
-  		margin: 0 auto;
-  		padding-top: 15px;
-  	}*/
 }
 
 body {
@@ -40,7 +35,7 @@ h1 {
 }
 
 .hello {
-  font-size: 12vw;
+  font-size: 12em;
   text-align: right;
   font-family: "Lato", sans-serif;
   font-weight: 100;
@@ -53,8 +48,8 @@ h1 {
 }
 
 .fa-arrow-circle-down {
-  font-size: 4vw;
-  padding-top: 4vw;
+  font-size: 4em;
+  padding-top: 2em;
 }
 .fa-arrow-circle-down:hover {
   color: #fac843;
@@ -62,7 +57,7 @@ h1 {
 }
 
 .about {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-image: url("../images/background2.png");
   background-size: cover;
@@ -73,25 +68,28 @@ h1 {
   margin: 50%;
 }
 .about h2 {
-  font-size: 9vw;
+  font-size: 8em;
   font-family: "Lato", sans-serif;
   font-weight: 100;
   padding: 100px 0px 0px 40px;
 }
 .about p {
-  font-size: 1vw;
+  font-size: 1em;
   margin-left: 150px;
 }
 
 .experience {
-  font-size: 0.75vw;
+  font-size: 0.75em;
   margin-left: 150px;
 }
 
-.fa-linkedin, .fa-envelope {
+footer p {
+  padding-left: 2em;
+}
+footer .fa-linkedin, footer .fa-envelope {
   color: #000;
 }
-.fa-linkedin:hover, .fa-envelope:hover {
+footer .fa-linkedin:hover, footer .fa-envelope:hover {
   color: #fac843;
 }
 
