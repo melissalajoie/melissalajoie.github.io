@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Melissa Lajoie's portfolio site",
   "main": "index.js",
-  "repository": "https://github.com/melissalajoie/melissalajoie.github.io",
   "scripts": {
   	"watch-sass": "node-sass main.scss main.css -w"
   },
