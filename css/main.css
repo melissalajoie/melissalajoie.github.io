@@ -40,7 +40,7 @@ h2 {
   display: none; }
 
 .bg-img {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,14 +59,20 @@ h2 {
   left: 30%; }
 
 .name {
-  color: #FDF038;
-  font-weight: 600; }
+  color: #FAC843;
+  font-weight: 600;
+  text-shadow: 2px 2px white; }
+
+.header-accent {
+  color: #FAC843;
+  font-weight: 600;
+  text-shadow: 2px 2px blacky; }
 
 .fa-arrow-circle-down {
   font-size: 4em;
   padding-top: 2em; }
   .fa-arrow-circle-down:hover {
-    color: #FDF038;
+    color: #FAC843;
     cursor: pointer; }
 
 .about, .timeline {
@@ -96,7 +102,7 @@ footer p {
 footer .fa-linkedin, footer .fa-envelope {
   color: #000; }
   footer .fa-linkedin:hover, footer .fa-envelope:hover {
-    color: #FDF038; }
+    color: #FAC843; }
 
 @media screen and (max-width: 700px) {
   .row {

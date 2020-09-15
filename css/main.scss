@@ -2,7 +2,7 @@
 $heading-font: 'Lato', sans-serif;
 $body-font: 'Roboto', sans-serif;
 
-$yellow: #FDF038;
+$yellow: #FAC843;
 
 .flex-container {
 	display: flex;
@@ -56,7 +56,7 @@ h2 {
 }
 
 .bg-img {
-	background-image: url('../images/header.jpg');
+	background-image: url('../images/header.png');
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,7 +79,13 @@ h2 {
 .name {
 	color: $yellow;
 	font-weight: 600;
-	// text-shadow: 2px 2px;
+	text-shadow: 2px 2px white;
+}
+
+.header-accent {
+	color: $yellow;
+	font-weight: 600;
+	text-shadow: 2px 2px blacky;
 }
 
 .fa-arrow-circle-down {

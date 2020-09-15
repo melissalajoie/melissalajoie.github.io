@@ -4,7 +4,7 @@
   "description": "Melissa Lajoie's portfolio site",
   "main": "index.js",
   "scripts": {
-  	"watch-sass": "node-sass main.scss main.css -w"
+    "watch-sass": "node-sass main.scss main.css -w"
   },
   "author": "Melissa Lajoie",
   "license": "MIT",
