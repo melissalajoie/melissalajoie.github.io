@@ -1,13 +1,15 @@
-.flex-container {
-  display: flex; }
-
 * {
   box-sizing: border-box; }
 
-.row {
+html {
+  margin: auto 0; }
+
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 6.25em 0 6.25em; }
+  flex-wrap: wrap; }
+
+.row {
+  flex: 1; }
 
 header {
   width: 100%;
@@ -20,7 +22,7 @@ body {
   margin: auto 0; }
 
 p {
-  margin: 0 0 10px;
+  padding-bottom: 0.625em;
   font-size: 1em;
   line-height: 1.6; }
 
@@ -34,7 +36,7 @@ h2 {
   font-size: 8em;
   font-family: "Lato", sans-serif;
   font-weight: 200;
-  padding: 80px 0px 30px 40px; }
+  padding: 0.25em 0em 0.25em 1em; }
 
 .hidden {
   display: none; }
@@ -58,15 +60,13 @@ h2 {
   top: 20%;
   left: 30%; }
 
-.name {
+.name, .header-accent {
   color: #FAC843;
   font-weight: 600;
   text-shadow: 2px 2px white; }
 
 .header-accent {
-  color: #FAC843;
-  font-weight: 600;
-  text-shadow: 2px 2px blacky; }
+  text-shadow: 2px 2px black; }
 
 .fa-arrow-circle-down {
   font-size: 4em;
@@ -75,26 +75,10 @@ h2 {
     color: #FAC843;
     cursor: pointer; }
 
-.about, .timeline {
-  flex: 70%;
-  padding-right: 15em; }
-  .about p, .timeline p {
-    margin-left: 150px;
-    margin-right: 150px; }
-
-.timeline {
-  text-align: right; }
-
-.photo {
-  flex: 30%;
-  padding-top: 130px; }
-  .photo .profile-img {
-    border-radius: 50%;
-    width: 75%; }
-
-.experience {
-  font-size: 0.75em;
-  margin-left: 150px; }
+.description {
+  margin-left: 20em;
+  margin-right: 9.375em;
+  max-width: 50%; }
 
 footer p {
   padding: 2em; }
@@ -104,6 +88,15 @@ footer .fa-linkedin, footer .fa-envelope {
   footer .fa-linkedin:hover, footer .fa-envelope:hover {
     color: #FAC843; }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 765px) {
+  .hello {
+    font-size: 6em;
+    left: 10%; }
+  h2 {
+    font-size: 4em; }
   .row {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .description {
+    margin-left: 4.375em;
+    margin-right: 4.375em;
+    max-width: 100%; } }

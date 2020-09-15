@@ -4,18 +4,21 @@ $body-font: 'Roboto', sans-serif;
 
 $yellow: #FAC843;
 
-.flex-container {
-	display: flex;
-}
-
 * {
   box-sizing: border-box;
 }
 
-.row{
+html {
+	margin: auto 0;
+}
+
+.flex-container {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 6.25em 0 6.25em;
+}
+
+.row{
+	flex: 1;
 }
 
 header{
@@ -31,7 +34,7 @@ body {
 }
 
 p {
-	margin: 0 0 10px;
+	padding-bottom: 0.625em;
 	font-size: 1em;
 	line-height: 1.6;
 }
@@ -48,7 +51,7 @@ h2 {
 	font-size: 8em;
 	font-family: $heading-font;
 	font-weight: 200;
-	padding: 80px 0px 30px 40px;
+	padding: 0.25em 0em 0.25em 1em;
 }
 
 .hidden {
@@ -76,16 +79,14 @@ h2 {
 	left: 30%;
 }
 
-.name {
+.name, .header-accent {
 	color: $yellow;
 	font-weight: 600;
 	text-shadow: 2px 2px white;
 }
 
 .header-accent {
-	color: $yellow;
-	font-weight: 600;
-	text-shadow: 2px 2px blacky;
+	text-shadow: 2px 2px black;
 }
 
 .fa-arrow-circle-down {
@@ -98,33 +99,10 @@ h2 {
 	}
 }
 
-.about, .timeline {
-	flex: 70%;
-	padding-right: 15em;
-
-	p {
-		margin-left: 150px;
-		margin-right: 150px;
-	}
-}
-
-.timeline {
-	text-align: right;
-}
-
-.photo {
-	flex: 30%;
-	padding-top: 130px;
-
-	.profile-img {
-		border-radius: 50%;
-		width: 75%;
-	}
-}
-
-.experience {
-	font-size: 0.75em;
-	margin-left: 150px;
+.description {
+	margin-left: 20em;
+	margin-right: 9.375em;
+	max-width: 50%;
 }
 
 footer {
@@ -140,8 +118,24 @@ footer {
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 765px) {
+
+	.hello {
+		font-size: 6em;
+		left: 10%;
+	}
+
+	h2 {
+		font-size: 4em;
+	}
+
   .row {
     flex-direction: column;
   }
+
+  .description {
+		margin-left: 4.375em;
+		margin-right: 4.375em;
+		max-width: 100%;
+	}
 }
